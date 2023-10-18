@@ -1,4 +1,4 @@
-from calculadora import soma,sub
+from calculadora import soma,sub,mul,div
 
 # Implementação da calculadora simples
 while True:
@@ -11,7 +11,9 @@ while True:
 #menu
     print("1. soma")
     print("2. Subtração")
-    print("3. sair")
+    print("3. Multiplicação")
+    print("4. Divisão")
+    print("5. sair")
 
 
     op = int(input("Opção: "))
@@ -36,6 +38,24 @@ while True:
 
         print(f"A sub é {total}")
     elif op == 3:
+        print("Multiplicação")
+
+        v1 = int(input("Informe o valor1: "))
+        v2 = int(input("Informe o outro numero: "))
+
+        total = mul(v1, v2)
+
+        print(f"A Multiplicação é {total}")
+    elif op == 4:
+        print("Divisão")
+
+        v1 = int(input("Informe o valor1: "))
+        v2 = int(input("Informe o outro numero: "))
+
+        total = div(v1, v2)
+
+        print(f"A Divisão é {total}")
+    elif op == 5:
         print("Marcha")
         break
     else:
