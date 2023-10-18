@@ -38,4 +38,8 @@ while True:
     elif op == 3:
         print("Marcha")
         break
+    else:
+        print("Erro: Esse número de opção não existe")
+        #Tratamento de erro
+
 
