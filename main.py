@@ -60,6 +60,6 @@ while True:
         break
     else:
         print("Erro: Esse número de opção não existe")
-        #Tratamento de erro
+        #Tratamento de erro feito
 
 
