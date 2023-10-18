@@ -53,8 +53,10 @@ while True:
         v2 = int(input("Informe o outro numero: "))
 
         total = div(v1, v2)
-
-        print(f"A Divisão é {total}")
+        if v1 == 0 and v2 == 0 or v2 == 0 and v1 == 0:
+            print("Divisão de 0 é 0")
+        else:
+            print(f"A Divisão é {total}")
     elif op == 5:
         print("Marcha")
         break
